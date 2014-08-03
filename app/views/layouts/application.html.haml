@@ -1,0 +1,16 @@
+!!!
+%html{lang: "en"}
+  %head
+    %title SampleApp
+    %meta{charset: "utf-8"}
+    %meta{content: "width=device-width, initial-scale=1, maximum-scale=1", name: "viewport"}
+    /[if IE 8] <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    /[if lt IE 9] <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    = stylesheet_link_tag    "application", media: "all"
+    = javascript_include_tag "application"
+    = favicon_link_tag 'fav.ico'
+    = csrf_meta_tags
+  %body
+    = render partial: 'layouts/header'
+    = yield
+    = render partial: 'layouts/footer'
