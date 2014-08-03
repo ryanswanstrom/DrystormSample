@@ -1,0 +1,36 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+=== Ruby version
+2.1.2
+
+=== System dependencies
+
+=== Configuration
+
+
+=== Database setup
+
+For Mac users with Postgres.app
+* gem install pg -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.3/bin/pg_config
+
+General setup:
+* rake db:create
+* rake db:migrate
+* rake db:migrate RAILS_ENV=test
+
+=== How to run the test suite
+
+=== Services (job queues, cache servers, search engines, etc.)
+
+=== Deployment instructions
+
+=== ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
