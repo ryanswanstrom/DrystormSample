@@ -1,0 +1,10 @@
+@import 'site/helpers'
+
+html, body
+  height: 100%
+
+.full-page-image
+  padding-top: 50px /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. */
+  height: 100%
+  background: url('http://placehold.it/1920x1080') no-repeat center center fixed
+  +vendor-prefix(background-size, cover)
