@@ -1,10 +1,27 @@
-#top_header
-  .intro-message
-    padding-top: 15%
-    text-align: center
+@import 'site/colors'
 
-    .intro-divider
-      width: 100%
+#top_header
+  padding-top: 15%
+  text-align: center
+  .divider
+    width: 100%
+
+body > main
+  .zig-zag
+    section
+      padding: 50px 0
+      &:first-of-type
+        padding-top: 30px
+      &:nth-child(even)
+        background-color: $alternating_subsection_color
+      .row
+        max-width: 1170px
+        margin: 0 auto
+      .section-heading-spacer
+        float: left
+        width: 200px
+        border-top: 3px solid $icon_color
+
 
 @media(min-width: 768px)
   @import 'pages/homepage/768'

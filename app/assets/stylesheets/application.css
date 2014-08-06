@@ -15,5 +15,7 @@
  *= require_tree ./pages
  *= require ./styles
  *= require ./homepage
+ *= require ./header
+ *= require ./footer
  *= require_self
  */

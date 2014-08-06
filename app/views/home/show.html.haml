@@ -1,21 +1,65 @@
-.full-page-image
-  #top_header.container
+%header#top_header.full-page-image
+  .container
     .row
       .col-lg-12
-        .intro-message
-          %h1 Value Proposition
-          %h3 Make Promises that Stick
-          %hr.intro-divider
-          %ul.list-inline.intro-social-buttons
-            %li
-              %a.btn.btn-default.btn-lg{href: "https://twitter.com/"}
-                %i.fa.fa-twitter.fa-fw
-                %span.network-name Twitter
-            %li
-              %a.btn.btn-default.btn-lg{href: "https://github.com/"}
-                %i.fa.fa-github.fa-fw
-                %span.network-name Github
-            %li
-              %a.btn.btn-default.btn-lg{href: "#"}
-                %i.fa.fa-linkedin.fa-fw
-                %span.network-name Linkedin
+        %h1 Value Proposition
+        %h3 Make Promises that Stick
+        %hr.divider
+        %ul.list-inline.social-buttons
+          %li
+            %a.btn.btn-default.btn-lg{href: "https://twitter.com/"}
+              %i.fa.fa-twitter.fa-fw
+              %span.network-name Twitter
+          %li
+            %a.btn.btn-default.btn-lg{href: "https://github.com/"}
+              %i.fa.fa-github.fa-fw
+              %span.network-name Github
+          %li
+            %a.btn.btn-default.btn-lg{href: "#"}
+              %i.fa.fa-linkedin.fa-fw
+              %span.network-name Linkedin
+
+%main{role: 'main'}
+  %section.zig-zag#section1
+    %section
+      .row
+        .col-lg-5.col-sm-6
+          %h2 Benefits
+      .row
+        .col-lg-5.col-sm-6
+          %hr.section-heading-spacer
+          .clearfix
+          %h2.section-heading
+            Instantly increase profit
+          %p.lead
+            Our awesome feature takes just 30 seconds to set up, and is designed to increase profitablity from day one.
+            Discover what makes this all possible by signing up to be one of the first to profit from our system.
+        .col-lg-5.col-lg-offset-2.col-sm-6
+          %img.img-responsive{alt: "", src: "#{image_url('homepage/ipad.png')}"}
+    %section
+      .row
+        .col-lg-5.col-lg-offset-1.col-sm-push-6.col-sm-6
+          %hr.section-heading-spacer
+          .clearfix
+          %h2.section-heading
+            Cut time consuming tasks
+          %p.lead
+            Do you spend significant amounts of time doing the task our software is designed to solve?
+            We're here to help. With our automated software we're able to reduce your time consuming tasks down from hours,
+            to just minutes. Don't take our word for it though, Try it out for FREE yourself!
+        .col-lg-5.col-sm-pull-6.col-sm-6
+          %img.img-responsive{alt: "", src: "#{image_url('homepage/dog.png')}"}
+    %section
+      .row
+        .col-lg-5.col-sm-6
+          %hr.section-heading-spacer
+          .clearfix
+          %h2.section-heading
+            Get a better sleep
+          %p.lead
+            Doing your job can at times be painful and worrisome,
+            but it doesn't have to be. With our notification feature
+            you will be alerted to any problems as they occur in realtime.
+            If you want to sleep better at night Sign up today, and let us do the worrying for you.
+        .col-lg-5.col-lg-offset-2.col-sm-6
+          %img.img-responsive{alt: "", src: "#{image_url('homepage/phones.png')}"}
