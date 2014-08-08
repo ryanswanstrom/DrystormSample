@@ -35,7 +35,7 @@
             Our awesome feature takes just 30 seconds to set up, and is designed to increase profitablity from day one.
             Discover what makes this all possible by signing up to be one of the first to profit from our system.
         .col-lg-5.col-lg-offset-2.col-sm-6
-          %img.img-responsive{alt: "", src: "#{image_url('homepage/ipad.png')}"}
+          = image_tag("http://placehold.it/400x300", class: 'img-responsive', alt: 'Image description goes here')
     %section
       .row
         .col-lg-5.col-lg-offset-1.col-sm-push-6.col-sm-6
@@ -48,7 +48,7 @@
             We're here to help. With our automated software we're able to reduce your time consuming tasks down from hours,
             to just minutes. Don't take our word for it though, Try it out for FREE yourself!
         .col-lg-5.col-sm-pull-6.col-sm-6
-          %img.img-responsive{alt: "", src: "#{image_url('homepage/dog.png')}"}
+          = image_tag("http://placehold.it/400x300", class: 'img-responsive', alt: 'Image description goes here')
     %section
       .row
         .col-lg-5.col-sm-6
@@ -62,4 +62,90 @@
             you will be alerted to any problems as they occur in realtime.
             If you want to sleep better at night Sign up today, and let us do the worrying for you.
         .col-lg-5.col-lg-offset-2.col-sm-6
-          %img.img-responsive{alt: "", src: "#{image_url('homepage/phones.png')}"}
+          = image_tag("http://placehold.it/400x300", class: 'img-responsive', alt: 'Image description goes here')
+
+  %section.team#section2
+    .container
+      .row
+        .col-md-6.col-md-offset-3
+          .section-title.text-center
+            %h2 Dream Team
+            .title-icon
+              %span
+                %i.icon-user5
+            %p.lead
+              To deliver great results, we draw from many years of experience working with
+              companies that you probably know, in the field that you work in.
+              Our expertise lies in a list of sub-categories in your field.
+          .hr{style: "margin-bottom:30px;"}
+      .row
+        .col-xs-12.col-sm-4.col-md-3
+          .member-box
+            .member-pic
+              = image_tag "http://placehold.it/220x314"
+            .member-details
+              %h4 Danny Davito
+              %span.member-position CTO
+              %p An expert in Ruby on Rails development and agile software processes, Danny ensures that we deliver great results 24/7.
+              .social-details
+                %ul
+                  %li.fb-icon
+                    %a{href: "https://plus.google.com/"}
+                      %i.fa.fa-google-plus
+                  %li.tw-icon
+                    %a{href: "https://twitter.com/"}
+                      %i.fa.fa-twitter
+                  %li.gp-icon
+                    %a{href: "http://pl.linkedin.com/"}
+                      %i.fa.fa-linkedin
+        .col-xs-12.col-sm-4.col-md-3
+          .member-box
+            .member-pic
+              = image_tag "http://placehold.it/220x314"
+            .member-details
+              %h4 Sarah Sahara
+              %span.member-position Content Strategy
+              %p Experienced in company content strategy, Sarah knows exactly what makes your followers retweet.
+              .social-details
+                %ul
+                  %li.fb-icon
+                    %a{href: "https://twitter.com/"}
+                      %i.fa.fa-twitter.fa-fw
+                  %li.tw-icon
+                    %a{href: "https://www.flickr.com/"}
+                      %i.fa.fa-flickr.fa-fw
+        .col-xs-12.col-sm-4.col-md-3
+          .member-box
+            .member-pic
+              = image_tag "http://placehold.it/220x314"
+            .member-details
+              %h4 Lance Lavender
+              %span.member-position Founder, CEO
+              %p A founding member of the Famous Company LavenderFriends.com, Lance has a firm grasp on Your Industry and Software.
+              .social-details
+                %ul
+                  %li.fb-icon
+                    %a{href: "http://Google.com/+"}
+                      %i.fa.fa-google-plus
+                  %li.tw-icon
+                    %a{href: "http://twitter.com/"}
+                      %i.fa.fa-twitter
+                  %li.gp-icon
+                    %a{href: "http://uk.linkedin.com/pub/"}
+                      %i.fa.fa-linkedin
+        .col-xs-12.col-sm-4.col-md-3
+          .member-box
+            .member-pic
+              = image_tag "http://placehold.it/220x314"
+            .member-details
+              %h4 Peter Piper
+              %span.member-position Designer
+              %p An expert in User Experience and Design, Peter ensures that our software is super easy, and intuitive to use.
+              .social-details
+                %ul
+                  %li.fb-icon
+                    %a{href: "https://plus.google.com/+"}
+                      %i.fa.fa-google-plus
+                  %li.tw-icon
+                    %a{href: "https://twitter.com/"}
+                      %i.fa.fa-twitter

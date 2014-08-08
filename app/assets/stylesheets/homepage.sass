@@ -1,3 +1,4 @@
+@import 'site/helpers'
 @import 'site/colors'
 
 #top_header
@@ -7,7 +8,10 @@
     width: 100%
 
 body > main
-  .zig-zag
+  section:nth-child(even)
+    background: $alternating_subsection_color
+
+  section.zig-zag
     section
       padding: 50px 0
       &:first-of-type
@@ -22,6 +26,64 @@ body > main
         width: 200px
         border-top: 3px solid $icon_color
 
+  section.team
+    padding: 50px 0
+    .member-box
+      width: 220px
+      text-align: center
+      .member-pic
+        margin: 0 auto
+        border: 0px solid black
+        border-radius: 10px
+        position: relative
+        overflow: hidden
+        &::after
+          content: ""
+          display: block
+          width: 100%
+          height: 200%
+          position: absolute
+          top: -40%
+          right: -65%
+          opacity: 0
+          filter: Alpha(Opacity = 0)
+          background-color: rgba(255, 255, 255, 0.2)
+          +vendor-prefix(transform, rotate(-20deg))
+          +vendor-prefix(transition, all 0.4s ease-out)
+      &:hover .member-pic::after
+        opacity: 1
+        filter: Alpha(Opacity = 1)
+      .member-details
+        height: 200px
+        h4
+          text-transform: uppercase
+        .member-position
+          display: block
+          font-size: 0.8em
+          margin-top: -3px
+          margin-bottom: 10px
+          text-transform: uppercase
+      .social-details
+        position: absolute
+        bottom: 0
+        width: 220px
+        ul
+          padding: 0
+          text-align: center
+          li
+            display: inline-block
+            list-style: none
+            a
+              display: block
+              width: 30px
+              height: 30px
+              line-height: 29px
+              +vendor-prefix(border-radius, 50%)
+              border: 1px solid $icon_color
+            &:hover a
+              background-color: $icon_hover_color
+              border-color: $icon_hover_color
+              color: white
 
 @media(min-width: 768px)
   @import 'pages/homepage/768'
