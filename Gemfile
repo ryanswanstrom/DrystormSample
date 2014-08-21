@@ -22,4 +22,5 @@ group :test do
   gem "factory_girl_rails", "~> 4.4.1"
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
+  gem 'poltergeist'
 end
