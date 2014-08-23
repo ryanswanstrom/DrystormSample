@@ -1,10 +1,19 @@
 @import 'site/helpers'
+@import 'site/colors'
+@import 'site/fonts'
 
 html, body
   height: 100%
+  color: $main_color
+  font-family: $main_font
 
 .full-page-image
   height: 100%
   padding-top: 50px /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. */
   background: url('http://placehold.it/1920x1080') no-repeat center center fixed
   +vendor-prefix(background-size, cover)
+
+.lead
+  font-weight: normal
+  font-size: 1.3em
+  line-height: 1.4em

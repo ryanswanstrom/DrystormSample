@@ -1,0 +1,16 @@
+@import 'site/colors'
+@import 'site/fonts'
+
+nav.navbar.navbar-inverse
+  background-color: $header_bg_color
+  background-image: none
+  border-bottom: 1px solid $header_border_color
+  font-family: $main_font
+  text-transform: uppercase
+  .navbar-brand, .navbar-nav li a
+    color: $header_link_color
+    font-size: 0.9em
+    text-shadow: none
+    opacity: 0.95
+    &:hover
+      color: $main_color
