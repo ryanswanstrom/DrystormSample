@@ -1,0 +1,17 @@
+.padded-content.col-lg-6.col-lg-offset-3.center-text
+  .row
+    .large-heading
+      %h1 Change your password
+      %p Enter your details in order to change your password
+  .row
+    .col-lg-6.col-lg-offset-3
+      = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f|
+        = devise_error_messages!
+        = f.hidden_field :reset_password_token
+        .form-group
+          = f.password_field :password, autofocus: true, autocomplete: "off", placeholder: 'Enter your new password', class: 'form-control'
+        .form-group
+          = f.password_field :password_confirmation, autocomplete: "off", placeholder: 'Confirm your new password', class: 'form-control'
+        .form-group
+          = f.submit "Change my password", class: 'btn btn-primary full-width'
+      = render "devise/shared/links"

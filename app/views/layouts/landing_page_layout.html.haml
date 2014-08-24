@@ -1,0 +1,6 @@
+- content_for :body do
+  = render partial: 'shared/header'
+  = yield
+  = render partial: 'shared/footer'
+
+= render template: 'layouts/application'

@@ -13,3 +13,9 @@
           %a{href: "/#section1"} Section 1
         %li
           %a{href: "/#section2"} Section 2
+        - if user_signed_in?
+          %li
+            = link_to "Logout", destroy_user_session_path, method: :delete
+        - else
+          %li
+            = link_to "Login", new_user_session_path

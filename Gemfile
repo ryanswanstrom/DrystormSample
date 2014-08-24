@@ -8,6 +8,7 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '~> 1.3.0'
 gem 'jquery-rails', '~> 3.1.1'
 gem "font-awesome-rails"
+gem 'devise'
 
 group :development do
   gem 'spring'

@@ -11,6 +11,5 @@
     = favicon_link_tag 'fav.ico'
     = csrf_meta_tags
   %body
-    = render partial: 'shared/header'
-    = yield
-    = render partial: 'shared/footer'
+    = yield(:body)
+

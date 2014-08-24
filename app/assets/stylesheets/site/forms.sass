@@ -1,0 +1,30 @@
+@import 'colors'
+@import 'helpers'
+
+form
+  .form-group
+    label
+      font-weight: normal
+    input
+      border-radius: 0px
+    input.full-width
+      width: 100%
+    input[type=checkbox]
+      margin-bottom: -1px
+      width: 13px
+      height: 13px
+      border: 1px solid #c6c6c6
+      +vendor-prefix(border-radius, 1px)
+      +vendor-prefix(appearance, none)
+      &:checked
+        background-color: $main_bg_color
+        background-image: none
+        &::after
+          content: url(//ssl.gstatic.com/ui/v1/menu/checkmark.png)
+          display: block
+          position: absolute
+          margin-top: -5px
+          margin-left: -6px
+      &:focus
+        outline: none
+        border-color: $icon_focus_color
