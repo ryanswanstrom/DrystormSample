@@ -8,6 +8,7 @@
     /[if lt IE 9] <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     = stylesheet_link_tag    "application", media: "all"
     = javascript_include_tag "application"
+    = yield(:include)
     = favicon_link_tag 'fav.ico'
     = csrf_meta_tags
   %body
