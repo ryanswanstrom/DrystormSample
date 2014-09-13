@@ -1,23 +1,26 @@
 @import 'site/colors'
 @import 'site/sizes'
 
-body > footer
-  height: $footer_height
-  width: 100%
-  position: absolute
-  padding: 20px 0
-  bottom: 0
-  color: $footer_text_color
-  background-color: $footer_bg_color
-  font-size: 0.9em
+body
+  margin: 0 0 $footer_height
 
-  .contact-info
-    .info
-      clear: left
-      padding: 20px
-      img, p
-        float: left
-      p
-        width: 90%
-        padding-left: 10px
+  & > footer
+    height: $footer_height
+    width: 100%
+    position: absolute
+    padding: 20px 0
+    bottom: 0
+    color: $footer_text_color
+    background-color: $footer_bg_color
+    font-size: 0.9em
+
+    .contact-info
+      .info
+        clear: left
+        padding: 20px
+        img, p
+          float: left
+        p
+          width: 90%
+          padding-left: 10px
 

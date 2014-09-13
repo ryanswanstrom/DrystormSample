@@ -1,13 +1,49 @@
 @import 'site/helpers'
+@import 'site/colors'
+@import 'site/fonts'
 @import 'site/sizes'
 
 html
   position: relative
 
+body
+  margin: 0
+
 html, body
   min-height: 100%
+  color: $main_color
+  font-family: $main_font
 
-body
-  margin: 0 0 $footer_height
+.lead
+  font-weight: normal
+  font-size: 1.3em
+  line-height: 1.4em
+  
+#page_content
+  margin-top: $top_nav_height
 
+  #flash_content
+    padding: 10px 15px
+    #flash_alert
+      color: $error_color
+    #flash_notice
+      color: $notice_color
 
+  .large-heading
+    padding-bottom: 2em
+    h1, p
+      font-weight: 300
+    h1
+      font-size: 3em
+    p
+      font-size: 1.5em
+      color: #777
+
+.padded-content
+  padding: 50px 0
+
+.center-text
+  text-align: center
+
+.left-align-text
+  text-align: left
